@@ -1,0 +1,56 @@
+<html>
+  <head>
+    <title>Login</title>
+    <link rel="stylesheet" type = "text/css" href = "./css/style.css" />
+  </head>
+  <body>
+  <div class = "headerMenu">
+    <div id = "wrapper">
+      <div class = "logo">
+        <div id = "title">
+          <h1 id = "title"> Grapevine</h1>
+         </div>
+      </div>
+      <div class = "search_box">
+        <form action="searhc.php" method = "GET" id = "search">
+          <input type="text" name = "q" size = "60" placeholder="Search">
+        </form>
+
+      </div>
+      <div id= "menu">
+        <a href="recent.html" /> Recent </a>
+        <a href="#" /> Week </a>
+        <a href="#" /> Month </a>
+        <a href="#" /> Year </a>
+
+      </div>
+    </div>
+  </div>
+  <div style = "width: 1000px; margin: 0px auto 0px auto;">
+  <table >
+    <tr>
+      <td width = "50%" valign="top">
+        <h2> Sign in Below</h2>
+        <form action="index.php" method = "POST"></form>
+        <input type="text" name = "username" size = "25" placeholder = "Username" /><br /><br />
+        <input type="text" name = "password" size = "25" placeholder = "Password" /><br /><br />
+        <input type= "submit" name= "reg" value= "Login">
+      </td>
+      <td width = "40%" valign ="top">
+        <h2> Create an Account</h2>
+        <form action="index.php" method = "POST">
+          <input type="text" name = "firstname" size = "25" placeholder = "First Name" /><br /><br />
+          <input type="text" name = "lastname" size = "25" placeholder = "Last Name" /><br /><br />
+          <input type="text" name = "email" size = "25" placeholder = "Email Address" /><br /><br />
+          <input type="text" name = "username" size = "25" placeholder = "Username" /><br /><br />
+          <input type="text" name = "password" size = "25" placeholder = "Password" /><br /><br />
+          <input type="text" name = "password" size = "25" placeholder = "Verify Password" /><br /><br />
+          <input type= "submit" name= "Submit" value= "Submit">
+
+        </form>
+      </td>
+    </tr>
+  </table>
+</div>
+  <body>
+</html>
