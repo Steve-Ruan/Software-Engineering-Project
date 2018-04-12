@@ -45,15 +45,35 @@
       </tr>
       <tr>
         <td> Katy Perry - California Girls</td>
-        <td> 100 </td>
+      <td id = "result"> 0</td>
+        <td> <button onclick = "bump()" class = "like-button"> Like </button></td>
       </tr>
       <td> Drake - God's Plan</td>
-      <td> 120 </td>
+      <td id = "result"> 10</td>
+        <td> <button onclick = "bump()" class = "like-button"> Like </button></td>
     </tr>
     <tr>
       <td> Chance the Rapper - Sunday Candy </td>
-      <td> 90</td>
+      <td> 23</td>
+        <td> <button onclick = "bump()" class = "like-button"> Like </button></td>
     </tr>
     </table>
+    <script>
+      function bump(){
+        if(typeof(Storage) !=="undefined")
+        {
+          if(localStorage.clickcount){
+            localStorage.clickcount = Number(localStorage.clickcount)+1;
+          }
+          else{
+            localStorage.clickcount=1;
+          }
+          document.getElementById("result").innerHTML = localStorage.clickcount;
+        }
+        else{
+          document.getElementById("result").innerHTML=0;
+        }
+      }
+    </script>
   </div>
 </html>
