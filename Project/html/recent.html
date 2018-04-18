@@ -18,6 +18,7 @@
 
       </div>
       <div id= "menu">
+        <a href="grapevine.html"> Log In </a>
         <a href="recent.html" /> Recent </a>
         <a href="week.html" /> Week </a>
         <a href="Month.html" /> Month </a>
@@ -32,7 +33,7 @@
     <h3>Recent Grapes</h3>
   </div>
   <div class = "post">
-    <div id= "column-1" class = "post">Post | Link <hr></div>
+    <div id= "column-1" class = "post">  <a href="grapevine.html"> Post </a> | <a href="grapevine.html"> Link </a><hr></div>
     <div id = "postpos" class = "post"><input type ="submit" id = "buttonpost" value = "post" /> </div>
     <div id ="postboxpos" class = "post"><textarea placeholder= "Share a song" id ="postbox" type="text"></textarea> </div>
   </div>
@@ -44,21 +45,25 @@
         <th> Likes </th>
       </tr>
       <tr>
-        <td> Katy Perry - California Girls</td>
-      <td id = "result"> 0</td>
+        <td> </td>
+      <td id = "result"> </td>
         <td> <button onclick = "bump()" class = "like-button"> Like </button></td>
       </tr>
-      <td> Drake - God's Plan</td>
-      <td id = "result"> 10</td>
+      <td> </td>
+      <td id = "result"> </td>
         <td> <button onclick = "bump()" class = "like-button"> Like </button></td>
     </tr>
     <tr>
-      <td> Chance the Rapper - Sunday Candy </td>
-      <td> 23</td>
+      <td> </td>
+      <td> </td>
         <td> <button onclick = "bump()" class = "like-button"> Like </button></td>
     </tr>
     </table>
     <script>
+      function addPost()
+      {
+        if()
+      }
       function bump(){
         if(typeof(Storage) !=="undefined")
         {
